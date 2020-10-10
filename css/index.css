@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Beleren SmallCaps Bold";
-  src: url("./fonts/Beleren2016SmallCaps-Bold.woff") format("woff");
-  src: url("./fonts/Beleren2016SmallCaps-Bold.ttf") format("truetype");
-  src: url("./fonts/Beleren2016SmallCaps-Bold.svg#Beleren2016SmallCaps-Bold")
+  src: url("./fonts/Beleren2016SmallCaps-Bold.woff") format("woff"),
+       url("./fonts/Beleren2016SmallCaps-Bold.ttf") format("truetype"),
+       url("./fonts/Beleren2016SmallCaps-Bold.svg#Beleren2016SmallCaps-Bold")
       format("svg");
   font-style: normal;
   font-weight: bold;
