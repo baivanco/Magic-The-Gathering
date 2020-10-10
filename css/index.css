@@ -1,12 +1,11 @@
+/* Beleren SmallCaps Bold */
 @font-face {
-  font-family: "Beleren SmallCaps Bold";
-  src: url("./fonts/Beleren2016SmallCaps-Bold.woff") format("woff"),
-       url("./fonts/Beleren2016SmallCaps-Bold.ttf") format("truetype"),
-       url("./fonts/Beleren2016SmallCaps-Bold.svg#Beleren2016SmallCaps-Bold")
-      format("svg");
-  font-style: normal;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
+    font-family: 'beleren2016regular';
+    src: url('./fonts2/beleren2016-bold-webfont.woff2') format('woff2'),
+         url('./fonts2/beleren2016-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 body {
