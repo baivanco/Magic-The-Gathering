@@ -1,3 +1,44 @@
+@font-face {
+  font-family: "Beleren SmallCaps Bold";
+  src: url("./fonts/Beleren2016SmallCaps-Bold.woff") format("woff"),
+    url("./fonts/Beleren2016SmallCaps-Bold.ttf") format("truetype"),
+    url("./fonts/Beleren2016SmallCaps-Bold.svg#Beleren2016SmallCaps-Bold")
+      format("svg");
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-image: url("../images/backgroundMGT.jpg");
+  background-color: #cccccc;
+}
+
+#label-input {
+  font-family: Beleren2016 Small Caps;
+  font-weight: bold;
+  font-size: 41px;
+  color: #ffffff;
+  color: rgb(255, 255, 255);
+  text-shadow: 7px 7px 15px #000000;
+}
+
+#ok-button {
+  width: 156px;
+  height: 43px;
+  background: #000000;
+  background: rgba(0, 0, 0, 1);
+  border-style: Solid;
+  border-color: #fbc42b;
+  border-color: rgba(251, 196, 43, 1);
+  border-width: 1px;
+  font-family: Beleren2016 Small Caps;
+  font-weight: bold;
+  font-size: 28px;
+  color: #fbc42b;
+  color: rgb(251, 196, 43);
+}
+
 #min-char,
 #first-upper {
   display: none;
