@@ -1,0 +1,12 @@
+{
+  "name": "magic_the_gathering",
+  "version": "1.0.0",
+  "description": "MGT cards finder application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Ivan Tasevsi",
+  "license": "ISC"
+}
