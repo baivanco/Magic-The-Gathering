@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "beleren2016_small_capsregular";
+  src: url("../styles/fonts/beleren2016-bold-demo.html") format("woff2"),
+    url("../styles/fonts/beleren2016smallcaps-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "beleren2016regular";
+  src: url("../styles/fonts/beleren2016-bold-webfont.woff2") format("woff2"),
+    url("../styles/fonts/beleren2016-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$primColor: #fbc42b;
+$font: "beleren2016_small_capsregular";

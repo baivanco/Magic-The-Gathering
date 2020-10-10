@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Magic The Gathering</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">
+     <img id="main-logo" src="../images/Logo.png" width="430px" alt="magic-logo">
+    </div>
+
+    <h2 id="label-input"for="name">Please Enter Your Name</h2>
+
+     <form class="form" name="nameForm" action="cards.html" method="POST" onsubmit="return validateForm()">
+
+     <div id="name-insert">
+         
+         <input type="text" id="name" name="name" autofocus autocomplete="off" > 
+            <p id="min-char">Minimum 3 characters</p>
+            <p id="first-upper">First character should be Uppercase</p>
+            <div class="ok-button">
+         <input id="ok-button" type="submit" onclick="handleSubmit()" value="OK">
+        </div>
+            
+    </div>
+        
+    </form>
+</div>
+     
+
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

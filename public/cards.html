@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/cards.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class='container'>
+        <h1 class="header">HELLO <span id="user-name"></span></h1>
+        <h3 class="find-card">FIND CARD</h3>
+        <div id="filter-search">
+        
+        <input type="text" id="search-n-t" name="search-n-t" placeholder="Search By Name..."/>
+        
+      
+
+        <select name="types" id='types' onchange="showSelectedType()" multiple>
+            <option value='Artifact'>Artifact</option>
+            <option value='Autobot'>Autobot</option>
+            <option value='Card'>Card</option>
+            <option value='Character'>Character</option>
+            <option value='Creature'>Creature</option>
+            <option value='Dragon'>Dragon</option>
+            <option value='Elemental'>Elemental</option>
+            <option value='Enchantment'>Enchantment</option>
+            <option value='Goblin'>Goblin</option>
+            <option value='Hero'>Hero</option>
+            <option value='Instant'>Instant</option>
+            <option value='Jaguar'>Jaguar</option>
+            <option value='Knights'>Knights</option>
+            <option value='Land'>Land</option>
+            <option value='Phenomenon'>Phenomenon</option>
+            <option value='Planeswalker'>Planeswalker</option>
+            <option value='Scheme'>Scheme</option>
+            <option value='Sorcery'>Sorcery</option>
+            <option value='Specter'>Specter</option>
+            <option value='Summon'>Summon</option>
+            <option value='Tribal'>Tribal</option>
+            <option value='Vanguard'>Vanguard</option>
+            <option value='Wolf'>Wolf</option>
+            <option value='You’ll'>You’ll</option>
+        </select>
+        
+
+        
+        
+        
+        <select name="colors" id='colors' onchange="showSelectedColor()" multiple>
+            <option value='Blue'>Blue</option>
+            <option value='Red'>Red</option>
+            <option value='White'>White</option>
+            <option value='Black'>Black</option>
+            <option value='Green'>Green</option>
+        </select>
+                    
+    </div>
+    <ul id="cardsList"></ul>
+
+</div>
+
+
+<div id="spinner"></div>
+<!-- <section id="cards"></section>
+
+
+<template id="card-template">
+    <div class="card">
+        
+        <h3 class="card-name"></h3>
+        <img src="" alt="" width=200px class="card-img">
+        <h4 class="card-types"></h4>
+        <h4 class="card-set-name"></h4>
+        <span class="card-colors"></span>
+
+    </div>
+</template> -->
+
+    <script type="text/javascript" src="../public/js/cards.js"></script>
+</body>
+</html>

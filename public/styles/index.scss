@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "beleren2016_small_capsregular";
+  src: url("../styles/fonts/beleren2016-bold-demo.html") format("woff2"),
+    url("../styles/fonts/beleren2016smallcaps-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "beleren2016regular";
+  src: url("../styles/fonts/beleren2016-bold-webfont.woff2") format("woff2"),
+    url("../styles/fonts/beleren2016-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$primColor: #fbc42b;
+$font: "beleren2016_small_capsregular";
+
+body {
+  background-image: url(../../images/backgroundMGT.jpg);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-logo {
+  margin-top: 110px;
+}
+
+h2 {
+  margin-top: 158px;
+  font-family: $font;
+  font-weight: bold;
+  font-size: 41px;
+  color: #fff;
+  text-shadow: 7px 17px 18px #000;
+}
+
+.ok-button {
+  display: flex;
+  justify-content: center;
+}
+
+#name {
+  width: 328px;
+  height: 55px;
+  background: #000;
+  border-style: Solid;
+  border-color: $primColor;
+  border-width: 1px;
+  color: $primColor;
+  font-family: "beleren2016regular";
+  font-size: 29px;
+  text-align: center;
+  box-shadow: 0px 0px 20px 10px $primColor;
+}
+
+#ok-button {
+  cursor: pointer;
+  margin-top: 100px;
+  width: 156px;
+  height: 43px;
+  background: #000;
+  border-style: Solid;
+  border-color: $primColor;
+  border-width: 1px;
+  font-family: $font;
+  font-size: 28px;
+  color: $primColor;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px $primColor;
+  position: relative;
+}
+
+#min-char,
+#first-upper {
+  display: none;
+  font-family: "beleren2016regular";
+  color: #000;
+  background-color: $primColor;
+  padding: 13px;
+  text-align: center;
+  letter-spacing: 1px;
+  position: relative;
+}
