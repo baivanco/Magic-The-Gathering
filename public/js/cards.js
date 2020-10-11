@@ -70,7 +70,7 @@ const loadCards = async () => {
     displayTheCards(mgtCards.cards);
   } catch (err) {
     if (err) {
-      cardsList.innerHTML = "SERVER ERROR PLEASE TRY AGAIN LATER";
+      cardsList.innerHTML = `<h1 style="color:white">"SERVER ERROR PLEASE TRY AGAIN LATER"</h1>`;
     }
     console.error(err);
   }
