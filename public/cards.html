@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/cards.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Cards</title>
 </head>
 
 <body>
-    <div class='container'>
-        <h1 class="header">HELLO <span id="user-name"></span></h1>
-        <h3 class="find-card">FIND CARD</h3>
-        <div id="filter-search">
-        
-        <input type="text" id="search-n-t" name="search-n-t" placeholder="Search By Name..."/>
-        
-      
+    <div class="logo-cont">
+        <a href="../public/index.html"><img src="../images/Logo.png" width=200px alt="MTG-logo"></a>
+    </div>
 
-        <select name="types" id='types' onchange="showSelectedType()" multiple>
+    <div class='container'>
+
+        
+
+        <h1 class="header">HELLO <span id="user-name"></span></h1>
+       
+        <h3 class="find-card">FIND CARD</h3>
+
+        <div id="filter-search">
+           <input type="text" id="search-n-t" name="search-n-t" placeholder="Search By Name..."/>
+                 
+                    
+        <select name="types" onchange="showSelectedType()"id='types' >
+            <option value="" disabled selected>Search By Type...</option>
             <option value='Artifact'>Artifact</option>
             <option value='Autobot'>Autobot</option>
             <option value='Card'>Card</option>
@@ -41,43 +51,34 @@
             <option value='Tribal'>Tribal</option>
             <option value='Vanguard'>Vanguard</option>
             <option value='Wolf'>Wolf</option>
-            <option value='You’ll'>You’ll</option>
+            <option value='You’ll'>You’ll</option>         
         </select>
         
-
-        
-        
-        
-        <select name="colors" id='colors' onchange="showSelectedColor()" multiple>
+         
+        <select name="colors" id='colors' onchange="showSelectedColor()" >
+            <option value="" disabled selected>Search By Color...</option>
             <option value='Blue'>Blue</option>
             <option value='Red'>Red</option>
             <option value='White'>White</option>
             <option value='Black'>Black</option>
             <option value='Green'>Green</option>
         </select>
+
+        <div id="sort-name">
+        <button id="asc-button" type="submit" onclick="sortByNameAsc()"></button>
+        <button id="desc-button" type="submit" onclick="sortByNameDesc()"></button>
+    </div>
                     
     </div>
     <ul id="cardsList"></ul>
-
+    
+    
 </div>
 
 
+
+
 <div id="spinner"></div>
-<!-- <section id="cards"></section>
-
-
-<template id="card-template">
-    <div class="card">
-        
-        <h3 class="card-name"></h3>
-        <img src="" alt="" width=200px class="card-img">
-        <h4 class="card-types"></h4>
-        <h4 class="card-set-name"></h4>
-        <span class="card-colors"></span>
-
-    </div>
-</template> -->
-
     <script type="text/javascript" src="../public/js/cards.js"></script>
 </body>
 </html>

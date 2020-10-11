@@ -16,12 +16,23 @@ body {
   background-image: url(../../images/backgroundMGT_blur.jpg);
 }
 
+.logo-cont {
+  float: left;
+  padding: 30px;
+}
+
 h1 {
   font-family: "beleren2016_small_capsregular";
   font-weight: bold;
   font-size: 99px;
   text-shadow: 7px 17px 18px #000;
   color: #fbc42b;
+  margin-bottom: 0;
+}
+
+p {
+  color: #fbc42b;
+  margin: 5px 0px;
 }
 
 h3 {
@@ -39,9 +50,44 @@ h3 {
   text-align: center;
 }
 
+#filter-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 9px;
+}
+
+#asc-button {
+  background-image: url(../../images/descbutton.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 33px;
+  width: 41px;
+  border: none;
+}
+
+#desc-button {
+  background-image: url(../../images/ascbutton.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 33px;
+  width: 41px;
+  border: none;
+}
+
 #search-n-t {
   padding-left: 14px;
-  width: 290px;
+  width: 250px;
   height: 38px;
   background: #000;
   color: #fbc42b;
@@ -52,11 +98,32 @@ h3 {
 }
 
 #types {
-  width: 140px;
-  height: 100px;
-  font-family: "beleren2016_small_capsregular";
-  background-color: #000;
+  margin: 0 40px;
+  padding-left: 14px;
+  width: 250px;
+  height: 38px;
+  background: #000;
   color: #fbc42b;
+  font-family: "beleren2016_small_capsregular";
+  font-size: 19px;
+  -webkit-box-shadow: 0px 0px 20px #fbc42b;
+          box-shadow: 0px 0px 20px #fbc42b;
+}
+
+#colors {
+  padding-left: 14px;
+  width: 250px;
+  height: 38px;
+  background: #000;
+  color: #fbc42b;
+  font-family: "beleren2016_small_capsregular";
+  font-size: 19px;
+  -webkit-box-shadow: 0px 0px 20px #fbc42b;
+          box-shadow: 0px 0px 20px #fbc42b;
+}
+
+#sort-name {
+  margin-left: 20px;
 }
 
 #cardsList {
@@ -97,10 +164,12 @@ h3 {
 
 #spinner {
   visibility: hidden;
-  width: 260px;
-  height: 150px;
-  background-image: url(../../images/logo.gif);
+  width: auto;
+  height: auto;
+  background-image: url(../../images/FullLoading.gif);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   position: absolute;
   top: 0;
   bottom: 0;

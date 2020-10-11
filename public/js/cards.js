@@ -4,20 +4,16 @@ window.addEventListener("load", () => {
   document.getElementById("user-name").innerHTML = name.toUpperCase();
 });
 
-// const cardSection = document.querySelector("#cards");
-// const cardTemplate = document.querySelector("#card-template");
-
+//Loading Screen
 const spinner = document.getElementById("spinner");
-
 function showSpinner() {
   spinner.className = "show";
 }
-
 function hideSpinner() {
   spinner.className = "hide";
 }
 
-//Search and Filter - searchbar
+//Search and Filter - Searchbar
 const searchField = document.getElementById("search-n-t");
 let displayCards = [];
 
@@ -27,66 +23,44 @@ searchField.addEventListener("keyup", (e) => {
     return card.name.toLowerCase().includes(searchString);
   });
   displayTheCards(filteredCards);
-  console.log(filteredCards);
 });
 
-//Filter by types
+// Filter by types
 function showSelectedType() {
-  const filterTypes = document.getElementById("types").value;
-  const filteredCardTypes = displayCards.filter((card) => {
-    return card.types.includes(filterTypes);
+  const selectedType = document.getElementById("types").value;
+  const filteredCardType = displayCards.filter((card) => {
+    return card.types.includes(selectedType);
   });
-  displayTheCards(filteredCardTypes);
+  displayTheCards(filteredCardType);
 }
 
-//Filter by color
+// Filter by color
 function showSelectedColor() {
-  const filterTypes = document.getElementById("colors").value;
-  const filteredCardTypes = displayCards.filter((card) => {
-    return card.colors.includes(filterTypes);
+  const filterColors = document.getElementById("colors").value;
+  const filteredCardColors = displayCards.filter((card) => {
+    return card.colors.includes(filterColors);
   });
-  displayTheCards(filteredCardTypes);
+  displayTheCards(filteredCardColors);
 }
 
+//Sort By Name
+
+sortByNameAsc = () => {
+  const filterNames = displayCards.sort((a, b) =>
+    a.name.toString().toLowerCase() > b.name.toString().toLowerCase() ? 1 : -1
+  );
+  displayTheCards(filterNames);
+};
+
+sortByNameDesc = () => {
+  const filterNames = displayCards.sort((a, b) =>
+    a.name.toString().toLowerCase() < b.name.toString().toLowerCase() ? 1 : -1
+  );
+  displayTheCards(filterNames);
+};
+
 //Fetch API
-// getData();
-// showSpinner();
-
-// async function getData() {
-//   const cardsLoad = await fetch(
-//     "https://api.magicthegathering.io/v1/cards?random=true&pageSize=100&language=English"
-//   );
-
-//   const allCards = await cardsLoad.json();
-//   console.log(allCards);
-
-//   allCards.cards.forEach((card, i) => {
-//     const name = card.name;
-//     const image = card.imageUrl;
-//     const types = card.types;
-//     const setName = card.setName;
-//     const colors = card.colors;
-
-//     const newCard = document.importNode(cardTemplate.content, true);
-//     const cardName = newCard.querySelector(".card-name");
-//     const cardImage = newCard.querySelector(".card-img");
-//     const cardTypes = newCard.querySelector(".card-types");
-//     const cardSetName = newCard.querySelector(".card-set-name");
-//     const cardColor = newCard.querySelector(".card-colors");
-
-//     cardName.innerText = name;
-//     cardImage.src = image;
-//     cardTypes.innerText = types;
-//     cardSetName.innerText = setName;
-//     cardColor.innerText = colors;
-//     cardSection.appendChild(newCard);
-//     hideSpinner();
-//   });
-// }
-
 const cardsList = document.getElementById("cardsList");
-
-//Fetch API
 const loadCards = async () => {
   try {
     const res = await fetch(
@@ -113,9 +87,8 @@ const displayTheCards = (cards) => {
     <img src=${card.imageUrl} width=200px onerror="this.src='../images/card-back-not-found.jpg'" ></img>
     <p> Types: ${card.types}</p>
     <p> Set Name: ${card.setName}</p>
-    <p> Colors: ${card.colors}</p>
-        
-    </li>    
+    <p> Colors: <span style="color:${card.colors};">${card.colors}</span></p>
+      </li>    
     `;
     })
     .join("");

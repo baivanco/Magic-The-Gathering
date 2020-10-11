@@ -12,8 +12,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "beleren2016_small_capsitalic";
+  src: url("../styles/fonts/beleren2016smallcaps-bolditalic-webfont.woff2") format("woff2"), url("../styles/fonts/beleren2016smallcaps-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-image: url(../../images/backgroundMGT.jpg);
+  background-position: center;
 }
 
 .container {
@@ -85,6 +93,13 @@ h2 {
   -webkit-box-shadow: 0px 0px 20px #fbc42b;
           box-shadow: 0px 0px 20px #fbc42b;
   position: relative;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+#ok-button:hover {
+  background: #fbc42b;
+  color: #000;
 }
 
 #min-char,
@@ -97,5 +112,40 @@ h2 {
   text-align: center;
   letter-spacing: 1px;
   position: relative;
+}
+
+#footer {
+  background-color: #000;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+}
+
+footer > img {
+  margin: 18px;
+}
+
+#copyright {
+  float: right;
+  margin: 18px;
+}
+
+#assig {
+  font-family: "beleren2016_small_capsitalic";
+  color: #fff;
+  font-size: 13px;
+}
+
+#polarcape-logo {
+  width: 90px;
+  margin-left: 5px;
+}
+
+#copy-info {
+  font-family: "beleren2016_small_capsitalic";
+  font-size: 17px;
+  color: #fff;
 }
 /*# sourceMappingURL=index.css.map */

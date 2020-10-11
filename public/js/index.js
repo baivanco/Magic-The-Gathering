@@ -24,5 +24,6 @@ function validateForm() {
   } else {
     document.getElementById("first-upper").style.display = "none";
   }
+
   return;
 }
