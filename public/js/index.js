@@ -5,7 +5,7 @@ function handleSubmit() {
   return;
 }
 
-//Input form Validation
+//Input FORM Validation
 function validateForm() {
   var name = document.getElementById("name").value;
 

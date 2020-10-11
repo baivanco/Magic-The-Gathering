@@ -36,15 +36,14 @@ function showSelectedType() {
 
 // Filter by color
 function showSelectedColor() {
-  const filterColors = document.getElementById("colors").value;
+  const selectedColors = document.getElementById("colors").value;
   const filteredCardColors = displayCards.filter((card) => {
-    return card.colors.includes(filterColors);
+    return card.colors.includes(selectedColors);
   });
   displayTheCards(filteredCardColors);
 }
 
 //Sort By Name
-
 sortByNameAsc = () => {
   const filterNames = displayCards.sort((a, b) =>
     a.name.toString().toLowerCase() > b.name.toString().toLowerCase() ? 1 : -1
@@ -71,13 +70,14 @@ const loadCards = async () => {
     displayTheCards(mgtCards.cards);
   } catch (err) {
     if (err) {
-      cardsList.innerHTML = "SERVER ERROR PLEASE TRY LATER";
+      cardsList.innerHTML = "SERVER ERROR PLEASE TRY AGAIN LATER";
     }
     console.error(err);
   }
   hideSpinner();
 };
 
+//Rendering the cards
 const displayTheCards = (cards) => {
   const htmlString = cards
     .map((card) => {

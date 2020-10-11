@@ -68,6 +68,7 @@ h3 {
 }
 
 #asc-button {
+  cursor: pointer;
   background-image: url(../../images/descbutton.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -77,6 +78,7 @@ h3 {
 }
 
 #desc-button {
+  cursor: pointer;
   background-image: url(../../images/ascbutton.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
