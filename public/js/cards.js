@@ -82,6 +82,7 @@ const loadCards = async () => {
 };
 
 //Rendering the cards
+
 const displayTheCards = (cards) => {
   const htmlString = cards
     .map((card) => {
@@ -92,6 +93,7 @@ const displayTheCards = (cards) => {
     <p> Types: ${card.types}</p>
     <p> Set Name: ${card.setName}</p>
     <p> Colors: <span style="color:${card.colors};">${card.colors}</span></p>
+    
       </li>    
     `;
     })
