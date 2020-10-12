@@ -8,6 +8,7 @@ Home page with user name input and simple validation.\
 Second page with API fetch, listed cards and search/filter options.
  
 ## User Guide
-Just download the .zip - extract and run index.html
+Just download the .zip - extract and run index.html\
+"Magic-The-Gathering-master\public\index.html"
 
 
