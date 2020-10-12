@@ -1,7 +1,7 @@
 //Get User Name From LocalStorage
 window.addEventListener("load", () => {
   const name = localStorage.getItem("NAME");
-  document.getElementById("user-name").innerHTML = name.toUpperCase();
+  document.getElementById("user-name").innerHTML = name;
 });
 
 //Loading Screen
