@@ -31,7 +31,11 @@ function showSelectedType() {
   const filteredCardType = displayCards.filter((card) => {
     return card.types.includes(selectedType);
   });
-  displayTheCards(filteredCardType);
+  if (filteredCardType.length == 0) {
+    cardsList.innerHTML = `<h2 style="color:white">" No cards found for chosen type "</h2>`;
+  } else {
+    displayTheCards(filteredCardType);
+  }
 }
 
 // Filter by color

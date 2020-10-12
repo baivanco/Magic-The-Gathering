@@ -16,6 +16,9 @@ h1 {
   color: $primColor;
   margin: 0;
 }
+h2 {
+  font-family: $font;
+}
 
 p {
   color: $primColor;
@@ -64,7 +67,7 @@ h3 {
   border: none;
 }
 
-#search-n-t {
+.input-sf {
   padding-left: 14px;
   width: 250px;
   height: 38px;
@@ -77,25 +80,6 @@ h3 {
 
 #types {
   margin: 0 40px;
-  padding-left: 14px;
-  width: 250px;
-  height: 38px;
-  background: #000;
-  color: $primColor;
-  font-family: $font;
-  font-size: 19px;
-  box-shadow: 0px 0px 20px $primColor;
-}
-
-#colors {
-  padding-left: 14px;
-  width: 250px;
-  height: 38px;
-  background: #000;
-  color: $primColor;
-  font-family: $font;
-  font-size: 19px;
-  box-shadow: 0px 0px 20px $primColor;
 }
 
 #sort-name {

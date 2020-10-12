@@ -27,10 +27,16 @@
           id="search-n-t"
           name="search-n-t"
           autofocus
+          class="input-sf"
           placeholder="Search By Name..."
         />
 
-        <select name="types" onchange="showSelectedType()" id="types">
+        <select
+          name="types"
+          onchange="showSelectedType()"
+          id="types"
+          class="input-sf"
+        >
           <option value="" disabled selected>Search By Type...</option>
           <option value="Artifact">Artifact</option>
           <option value="Autobot">Autobot</option>
@@ -58,7 +64,12 @@
           <option value="You’ll">You’ll</option>
         </select>
 
-        <select name="colors" id="colors" onchange="showSelectedColor()">
+        <select
+          name="colors"
+          id="colors"
+          class="input-sf"
+          onchange="showSelectedColor()"
+        >
           <option value="" disabled selected>Search By Color...</option>
           <option value="Blue" style="color: blue">Blue</option>
           <option value="Red" style="color: red">Red</option>
