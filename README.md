@@ -1,6 +1,6 @@
 # Magic The Gathering
  List, search and filter MGT cards from API \
- No frameworks and libraries used just plain JS :)
+ No frameworks and libraries used just plain JS
  
 ## Short Intro
 Two paged application for preview and searching MGT cards.\
